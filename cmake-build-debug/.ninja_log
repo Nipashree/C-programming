@@ -1,3 +1,7 @@
 # ninja log v5
 0	134	7218376754689646	CMakeFiles/C_programming.dir/File1.c.obj	2f1de416b6bef1d9
-136	312	7218376756413638	C_programming.exe	66b1f23aa51b9a4f
+131	336	7218378255667157	C_programming.exe	d03531f5da19bbbe
+4	128	7218378253648175	CMakeFiles/C_programming.dir/File2.c.obj	2e7509d4253e190
+3	339	7218378442461821	build.ninja	d70e5bbf87387e46
+1	194	7218378446153930	CMakeFiles/C_programming.dir/File2.c.obj	2e7509d4253e190
+196	386	7218378448040835	C_programming.exe	e965617a836ba4f4
