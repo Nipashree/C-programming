@@ -5,7 +5,7 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(
         C_Programming
-        File_5.c
-#        File6.c
-#        File6.c
+#        File_5.c
+        File6.c
+#
 )
