@@ -3,6 +3,9 @@ project(C_Programming C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(C_Programming
-        string1.c
+add_executable(
+        C_Programming
+        File_5.c
+#        File6.c
+#        File6.c
 )

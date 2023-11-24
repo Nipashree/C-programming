@@ -731,7 +731,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C_programming"
+			"value" : "C_Programming"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1108,6 +1108,42 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "C_Programming_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/nipas/OneDrive/Documents/GitHub/C-programming/cmake-build-debug"
+		},
+		{
+			"name" : "C_Programming_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "C_Programming_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/nipas/OneDrive/Documents/GitHub/C-programming"
 		},
 		{
 			"name" : "C_programming_BINARY_DIR",

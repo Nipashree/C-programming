@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "C_programming",
+					"name" : "C_Programming",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "C_programming::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-C_programming-Debug-2f87420af94d969d8d8b.json",
-					"name" : "C_programming",
+					"id" : "C_Programming::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-C_Programming-Debug-b1aa7c0f4d5ba40cfcc3.json",
+					"name" : "C_Programming",
 					"projectIndex" : 0
 				}
 			]

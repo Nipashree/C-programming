@@ -1,3 +1,4 @@
+//Write a program to swap the values of variable a & b.
 #include<stdio.h>
 int main()
 {
@@ -6,7 +7,7 @@ int main()
     scanf("%d%d",&a,&b);
     c=a;
     a=b;
-    a=c;
-    printf("New value of A:%d\n",a);
-    printf("New value of b:%d\n",b);
+    b=c;
+    printf("The new value of A:%d\n",a);
+    printf("The new value of B:%d\n",b);
 }
