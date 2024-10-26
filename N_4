@@ -1,0 +1,9 @@
+
+#include <stdio.h>
+
+int main() {
+    int x,a=10;
+    x=20+ a++;
+    printf("Sum:%d",x);
+        return 0;
+}
