@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+float wt;
+printf("Enter weight:");
+scanf("%f",&wt);
+
+while(wt>65){
+printf("Go Run\n");
+printf("enter your age:\n");
+scanf("%f",&wt);
+}
+}
