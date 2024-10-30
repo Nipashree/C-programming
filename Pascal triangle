@@ -1,0 +1,54 @@
+#include <stdio.h>
+// Function to calculate factorial of a number
+
+int factorial(int n) {
+
+    int fact = 1;
+
+    for (int i = 1; i <= n; ++i) {
+
+        fact *= i;
+
+    }
+
+    return fact;
+
+}
+
+int main() {
+
+    int i, j, rows
+
+    // Prompt user to enter the number of rows
+
+    printf(“Enter the number of rows: “);
+
+    scanf(“%d”, &rows);
+
+    // Outer loop for each row
+
+    for (i = 0; i < rows; ++i) {
+
+        // Print leading spaces for alignment
+
+        for (j = 0; j < rows – i – 1; ++j) {
+
+            printf(”  “);
+
+        }
+
+        // Inner loop to print binomial coefficients
+
+        for (j = 0; j <= i; ++j) {
+
+            printf(“%4d”, factorial(i) / (factorial(j) * factorial(i – j)));
+
+        }
+
+        printf(“\n”); // New line after each row
+
+    }
+
+    return 0;
+
+}
