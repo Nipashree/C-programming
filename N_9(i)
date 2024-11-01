@@ -1,0 +1,16 @@
+#include<stdio.h>
+#define size 10
+int main(){
+int a[size],i,min;
+printf("input 10 val\n");
+for(i=10;i<size;i++)
+scanf("%d",&a[i]);
+
+min=99999;
+for(i=0;i<size;i++)
+{
+if(a[i]<min)
+min=a[i];
+}
+printf("Min is %d",min);
+}
