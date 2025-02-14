@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+void findSecondLargestAndSmallest(int arr[], int n) {
+    if (n < 2) {
+        printf("Array must have at least two elements.\n");
+        return;
+    }
+
+    int smallest = arr[0], secondSmallest = __INT_MAX__;
+    int largest = arr[0], secondLargest = __INT_MIN__;
+
+    // Find smallest and second smallest
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < smallest) {
+            secondSmallest = smallest;
+            smallest = arr[i];
+        } else if (arr[i] > smallest && arr[i] < secondSmallest) {
+            secondSmallest = arr[i];
+        }
+    }
+
+    // Find largest and second largest
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > largest) {
+            secondLargest = largest;
+            largest = arr[i];
+        } else if (arr[i] < largest && arr[i] > secondLargest) {
+            secondLargest = arr[i];
+        }
+    }
+
+    if (secondSmallest == __INT_MAX__) {
+        printf("No second smallest element found.\n");
+    } else {
+        printf("Second Smallest: %d\n", secondSmallest);
+    }
+
+    if (secondLargest == __INT_MIN__) {
+        printf("No second largest element found.\n");
+    } else {
+        printf("Second Largest: %d\n", secondLargest);
+    }
+}
+
+int main() {
+    int arr[] = {12, 35, 1, 10, 34, 1};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    findSecondLargestAndSmallest(arr, n);
+
+    return 0;
+}
