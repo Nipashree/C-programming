@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+void inputMatrix(int matrix[][10], int rows, int cols) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("Enter element [%d][%d]: ", i, j);
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+}
+
+void multiplyMatrices(int mat1[][10], int mat2[][10], int result[][10], int m, int p, int n) {
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            result[i][j] = 0;
+            for (int k = 0; k < p; k++) {
+                result[i][j] += mat1[i][k] * mat2[k][j];
+            }
+        }
+    }
+}
+
+void displayMatrix(int matrix[][10], int rows, int cols) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("%d\t", matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int m, p, n;
+    int mat1[10][10], mat2[10][10], result[10][10];
+
+    printf("Enter dimensions of first matrix (m p): ");
+    scanf("%d %d", &m, &p);
+    printf("Enter elements of first matrix:\n");
+    inputMatrix(mat1, m, p);
+
+    printf("Enter dimensions of second matrix (p n): ");
+    scanf("%d %d", &p, &n);
+    printf("Enter elements of second matrix:\n");
+    inputMatrix(mat2, p, n);
+
+    multiplyMatrices(mat1, mat2, result, m, p, n);
+
+    printf("Resultant matrix after multiplication:\n");
+    displayMatrix(result, m, n);
+
+    return 0;
+}
